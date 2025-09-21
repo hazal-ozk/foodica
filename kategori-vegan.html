@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <title>Foodica</title>
+
+    <style>
+        .navbar-green {
+            background-color: #499471; 
+        }
+
+        .navbar-green .navbar-brand {
+            color: #ecfdf5;
+            font-weight: bold;
+            font-size: 30px;
+            text-shadow: 1px 1px 4px rgb(28, 28, 28);
+        }
+
+        .navbar-green .navbar-brand:hover {
+            color: #ffffff;
+        }
+
+
+        .navbar-toggler {
+            display: none;
+        }
+
+
+        .navbar-green {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 150px; 
+            left: 20px;
+            background-color: #499471;
+            color: #fff;
+            padding: 10px 18px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #3b7b5f;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .tarifler h2{
+            text-align: center;
+            padding: 20px 0px;  
+        }
+        .tarif-card{
+            position: relative;
+        }
+        .tarif-card .hazırlık{
+            position: absolute;
+            bottom:20px;
+        }
+        .tarif-card p{
+            padding-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-green py-4">
+        <div class="container-fluid px-5 justify-content-center">
+            <a class="navbar-brand" href="index.html">Foodica</a>
+        </div>
+    </nav>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+    </a>
+
+    <section class="tarifler">
+        <div class="container py-5">
+            <h1 class="text-center mb-4">Vegan Tarifler</h1>
+            <div class="row g-4">
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="mercimek-koftesi" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Mercimek Köftesi</h2>
+                            <p>Bol yeşillikli, baharatlı ve doyurucu nefis bir vegan köfte alternatifi.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>1 su bardağı kırmızı mercimek</li>
+                                <li>1,5 su bardağı ince bulgur</li>
+                                <li>1 adet soğan</li>
+                                <li>2 yemek kaşığı salça</li>
+                                <li>Maydanoz, yeşil soğan, baharatlar</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Mercimeği haşlayıp bulgurla karıştırın. Kavrulmuş soğan ve salçayı ekleyin. Yeşillikler ve baharatlarla yoğurup şekil verin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="nohut-sote" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Nohut Sote</h2>
+                            <p>Protein dolu, sebzeli nefis bir vegan ana yemek alternatifi.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>2 su bardağı haşlanmış nohut</li>
+                                <li>1 adet soğan</li>
+                                <li>1 adet kırmızı biber</li>
+                                <li>1 diş sarımsak</li>
+                                <li>Kimyon, karabiber, zeytinyağı</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Soğan ve sarımsağı kavurun, biberleri ekleyin. Nohut ve baharatları katın. 5-10 dakika soteleyip sıcak servis yapın.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="sebzeli-kuskus" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Sebzeli Kuskus</h2>
+                            <p>Renkli sebzelerle hazırlanmış doyurucu, pratik ve vegan bir tabak.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>1 su bardağı kuskus</li>
+                                <li>1 adet kabak</li>
+                                <li>1 adet havuç</li>
+                                <li>1 adet kırmızı biber</li>
+                                <li>Zeytinyağı, tuz, karabiber</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Kuskusu haşlayın. Sebzeleri soteleyin. Kuskusla birleştirip baharatlayarak servis edin. Ilık ya da soğuk tüketilebilir.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="avokado-tost" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Avokado Tost</h2>
+                            <p>Besleyici ve lezzetli bir vegan kahvaltı seçeneği: Avokadolu tam buğday tostu.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>1 adet olgun avokado</li>
+                                <li>2 dilim tam buğday ekmeği</li>
+                                <li>1 çay kaşığı limon suyu</li>
+                                <li>Tuz, karabiber, pul biber</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Avokadoyu ezip limon ve baharatlarla karıştırın. Ekmekleri kızartıp karışımı sürün. İsteğe göre cherry domates ekleyin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>

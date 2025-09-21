@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <title>Foodica</title>
+
+    <style>
+        .navbar-green {
+            background-color: #499471; 
+        }
+
+        .navbar-green .navbar-brand {
+            color: #ecfdf5;
+            font-weight: bold;
+            font-size: 30px;
+            text-shadow: 1px 1px 4px rgb(28, 28, 28);
+        }
+
+        .navbar-green .navbar-brand:hover {
+            color: #ffffff;
+        }
+
+
+        .navbar-toggler {
+            display: none;
+        }
+
+
+        .navbar-green {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 150px; 
+            left: 20px;
+            background-color: #499471;
+            color: #fff;
+            padding: 10px 18px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #3b7b5f;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .tarifler h2{
+            text-align: center;
+            padding: 20px 0px;  
+        }
+        .tarif-card{
+            position: relative;
+        }
+        .tarif-card .hazırlık{
+            position: absolute;
+            bottom:20px;
+        }
+        .tarif-card p{
+            padding-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-green py-4">
+        <div class="container-fluid px-5 justify-content-center">
+            <a class="navbar-brand" href="index.html">Foodica</a>
+        </div>
+    </nav>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+    </a>
+
+    <section class="tarifler">
+        <div class="container py-5">
+            <h1 class="text-center mb-4">Deniz Ürünleri</h1>
+            <div class="row g-4">
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="karides-guvec" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Karides Güveç</h2>
+                            <p>Güveçte tereyağı, sarımsak ve domatesle buluşan karidesin fırınlanmış enfes hali.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>300 g ayıklanmış karides</li>
+                                <li>1 adet soğan</li>
+                                <li>2 diş sarımsak</li>
+                                <li>2 adet domates</li>
+                                <li>1 yemek kaşığı tereyağı</li>
+                                <li>Tuz, karabiber, pul biber</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Soğan ve sarımsağı kavurup doğranmış domatesi ekleyin. Karidesleri ilave edin. Karışımı güveç kabına alıp tereyağını ekleyin. 180°C fırında 15 dakika pişirin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="kalamar-tava" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Kalamar Tava</h2>
+                            <p>Dışı altın rengi, içi yumuşacık lokum gibi kalamar halkaları!</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>500 g kalamar</li>
+                                <li>1 çay kaşığı karbonat</li>
+                                <li>1 yemek kaşığı sirke</li>
+                                <li>Un</li>
+                                <li>Tuz</li>
+                                <li>Sıvı yağ (kızartmak için)</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Kalamarları karbonat ve sirke ile ovalayıp 30 dk bekletin. Kurulayıp una bulayın. Kızgın yağda çıtır olana kadar kızartın. Yanında tarator sosla servis edin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="levrek-bugulama" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Levrek Buğulama</h2>
+                            <p>Sağlıklı ve hafif bir seçenek: Sebzelerle buğulanmış levrek.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>2 adet levrek fileto</li>
+                                <li>1 adet soğan</li>
+                                <li>1 adet havuç</li>
+                                <li>1 adet domates</li>
+                                <li>1 limon</li>
+                                <li>Zeytinyağı, tuz, karabiber</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Balıkları sebzelerle birlikte tencereye yerleştirin. Üzerine limon dilimleri, zeytinyağı ve baharat ekleyin. Kısık ateşte 25 dakika pişirin. Sıcak servis edin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="midye-dolma" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Midye Dolma</h2>
+                            <p>İç pilavla doldurulmuş klasik sokak lezzeti: Midye dolma!</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>30 adet temizlenmiş midye</li>
+                                <li>1 su bardağı pirinç</li>
+                                <li>1 adet soğan</li>
+                                <li>2 yemek kaşığı dolmalık fıstık</li>
+                                <li>1 yemek kaşığı kuş üzümü</li>
+                                <li>Tarçın, yenibahar, karabiber, tuz</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Soğan, fıstık ve pirinci kavurun. Baharat ve kuş üzümünü ekleyip iç pilavı hazırlayın. Midyeleri bu pilavla doldurup tencereye dizin. Üzerine az su ekleyip pişirin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

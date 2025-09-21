@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <title>Foodica</title>
+
+    <style>
+        .navbar-green {
+            background-color: #499471; 
+        }
+
+        .navbar-green .navbar-brand {
+            color: #ecfdf5;
+            font-weight: bold;
+            font-size: 30px;
+            text-shadow: 1px 1px 4px rgb(28, 28, 28);
+        }
+
+        .navbar-green .navbar-brand:hover {
+            color: #ffffff;
+        }
+
+
+        .navbar-toggler {
+            display: none;
+        }
+
+
+        .navbar-green {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 150px; 
+            left: 20px;
+            background-color: #499471;
+            color: #fff;
+            padding: 10px 18px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #3b7b5f;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .tarifler h2{
+            text-align: center;
+            padding: 20px 0px;  
+        }
+        .tarif-card{
+            position: relative;
+        }
+        .tarif-card .hazırlık{
+            position: absolute;
+            bottom:20px;
+        }
+        .tarif-card p{
+            padding-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-green py-4">
+        <div class="container-fluid px-5 justify-content-center">
+            <a class="navbar-brand" href="index.html">Foodica</a>
+        </div>
+    </nav>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+    </a>
+
+    <section class="tarifler">
+        <div class="container py-5">
+            <h1 class="text-center mb-4">Atıştırmalıklar</h1>
+            <div class="row g-4">
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="patates-kroket" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Patates Kroket</h2>
+                            <p>Dışı çıtır, içi yumuşacık nefis bir ara öğün ya da ikramlık: Patates kroket.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>4 adet haşlanmış patates</li>
+                                <li>1 adet yumurta</li>
+                                <li>Yarım su bardağı rendelenmiş kaşar peyniri</li>
+                                <li>3 yemek kaşığı un</li>
+                                <li>Tuz, karabiber</li>
+                                <li>Galeta unu, sıvı yağ (kızartmak için)</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Haşlanmış patatesleri ezip diğer malzemelerle yoğurun. Şekil verip galeta ununa bulayın. Kızgın yağda altın rengi alana kadar kızartın. Sıcak servis edin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="mini-pide" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Mini Pide</h2>
+                            <p>İster kahvaltıda ister çay saatinde... Hamur işi sevenlere özel mini kıymalı pideler.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>2 su bardağı un</li>
+                                <li>Yarım su bardağı ılık su</li>
+                                <li>Yarım paket instant maya</li>
+                                <li>1 tatlı kaşığı şeker, tuz</li>
+                                <li>150 g kıyma, 1 adet soğan</li>
+                                <li>Salça, baharatlar</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Hamuru yoğurup mayalanmaya bırakın. Bu sırada kıymalı iç harcı hazırlayın. Hamurdan mini pideler açıp harcı yerleştirin. 180°C fırında 20 dakika pişirin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="mozzarella-cubuklari" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Mozzarella Çubukları</h2>
+                            <p>Çekme peyniri sevenler için: Mozzarella çubukları dışı çıtır içi uzayan bir lezzet!</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>200 g mozzarella peyniri</li>
+                                <li>1 adet yumurta</li>
+                                <li>Un</li>
+                                <li>Galeta unu</li>
+                                <li>Baharatlar (isteğe bağlı)</li>
+                                <li>Sıvı yağ (kızartmak için)</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Peyniri çubuklara bölün. Önce una, sonra çırpılmış yumurtaya, ardından galeta ununa bulayın. 10 dk dondurucuda bekletin. Kızgın yağda kızartın.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="kabak-cips" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Kabak Cipsi</h2>
+                            <p>Fırında ya da yağda çıtır çıtır pişen hafif bir atıştırmalık: Kabak cipsi.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>2 adet kabak</li>
+                                <li>1 adet yumurta</li>
+                                <li>Un</li>
+                                <li>Galeta unu veya mısır unu</li>
+                                <li>Tuz, karabiber, pul biber</li>
+                                <li>Yağ (kızartmak veya fırçalamak için)</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Kabakları ince dilimleyin. Un, yumurta ve galeta ununa sırayla bulayın. Yağlayıp fırınlayın veya kızgın yağda kızartın. Yanında yoğurtlu dip sosla servis edin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="hamburger" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Hamburger</h2>
+                            <p>Dışı çıtır içi sulu köftesiyle ev yapımı nefis bir hamburger tarifi.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>400 g kıyma (yağlı)</li>
+                                <li>2 adet hamburger ekmeği</li>
+                                <li>1 adet soğan (isteğe bağlı karamelize)</li>
+                                <li>Marul, domates, turşu</li>
+                                <li>Tuz, karabiber</li>
+                                <li>Ketçap, mayonez, hardal</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Kabakları ince dilimleyin. Un, yumurta ve galeta ununa sırayla bulayın. Yağlayıp fırınlayın veya kızgın yağda kızartın. Yanında yoğurtlu dip sosla servis edin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="pizza" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Ev Yapımı Pizza</h2>
+                            <p>Dilediğin malzemelerle fırından yeni çıkmış nefis, çıtır pizza!</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>2 su bardağı un</li>
+                                <li>Yarım paket instant maya</li>
+                                <li>1 çay kaşığı tuz, şeker</li>
+                                <li>Yarım su bardağı ılık su</li>
+                                <li>Domates sosu, rendelenmiş kaşar</li>
+                                <li>Sucuk, mantar, zeytin, mısır (isteğe bağlı)</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Hamuru yoğurup mayalandırın. Açıp sos ve malzemeleri yerleştirin. Önceden ısıtılmış 200°C fırında 15-20 dakika pişirin. Dilimleyip servis yapın.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

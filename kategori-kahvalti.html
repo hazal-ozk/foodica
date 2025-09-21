@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <title>Foodica</title>
+
+    <style>
+        .navbar-green {
+            background-color: #499471; 
+        }
+
+        .navbar-green .navbar-brand {
+            color: #ecfdf5;
+            font-weight: bold;
+            font-size: 30px;
+            text-shadow: 1px 1px 4px rgb(28, 28, 28);
+        }
+
+        .navbar-green .navbar-brand:hover {
+            color: #ffffff;
+        }
+
+
+        .navbar-toggler {
+            display: none;
+        }
+
+
+        .navbar-green {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 150px; 
+            left: 20px;
+            background-color: #499471;
+            color: #fff;
+            padding: 10px 18px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #3b7b5f;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .tarifler h2{
+            text-align: center;
+            padding: 20px 0px;  
+        }
+        .tarif-card{
+            position: relative;
+        }
+        .tarif-card .hazırlık{
+            position: absolute;
+            bottom:20px;
+        }
+        .tarif-card p{
+            padding-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-green py-4">
+        <div class="container-fluid px-5 justify-content-center">
+            <a class="navbar-brand" href="index.html">Foodica</a>
+        </div>
+    </nav>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Ana Sayfaya Dön
+    </a>
+
+    <section class="tarifler">
+        <div class="container py-5">
+            <h1 class="text-center mb-4">Kahvaltılıklar</h1>
+            <div class="row g-4">
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="menemen" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Menemen</h2>
+                            <p>Yumurtalı, biberli, domatesli klasik Türk kahvaltısı menemen.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>3 adet domates</li>
+                                <li>2 adet yeşil biber</li>
+                                <li>3 adet yumurta</li>
+                                <li>2 yemek kaşığı zeytinyağı</li>
+                                <li>Tuz, karabiber</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Yağda biberleri kavurun. Üzerine doğranmış domatesleri ekleyip pişirin. Yumurtaları kırıp karıştırın veya bütün bırakın. Baharat ekleyip sıcak servis yapın.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="peynirli-borek" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Peynirli Börek</h2>
+                            <p>Dışı çıtır içi yumuşak klasik kahvaltılık üçgen börek.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>3 adet yufka</li>
+                                <li>200 g beyaz peynir</li>
+                                <li>Maydanoz</li>
+                                <li>Sıvı yağ</li>
+                                <li>1 adet yumurta (üzeri için)</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Peyniri ve ince doğranmış maydanozu karıştırın. Yufkaları üçgen kesip iç harcı yerleştirin. Sarıp yağlı tepsiye dizin. Üzerine yumurta sürüp 180°C fırında pişirin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="akdeniz-salata" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Akdeniz Kahvaltı Tabağı</h2>
+                            <p>Zeytin, peynir, domates, salatalık ve yeşilliklerle dolu sağlıklı kahvaltı alternatifi.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>Beyaz peynir, zeytin</li>
+                                <li>1 adet domates</li>
+                                <li>1 adet salatalık</li>
+                                <li>Roka, maydanoz</li>
+                                <li>Zeytinyağı, pul biber</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Tüm malzemeleri doğrayın ve tabağa yerleştirin. Üzerine zeytinyağı gezdirip isteğe göre pul biber serpin. Yanında kızarmış ekmekle servis edin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="krep" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Krep</h2>
+                            <p>İster tuzlu ister tatlı tüketebileceğiniz pratik kahvaltılık krep tarifi.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>1 adet yumurta</li>
+                                <li>1 su bardağı süt</li>
+                                <li>1 su bardağı un</li>
+                                <li>Bir tutam tuz</li>
+                                <li>Tereyağı veya sıvı yağ (pişirmek için)</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Tüm malzemeleri çırpın. Yağladığınız tavada ince bir tabaka halinde pişirin. Arkalı önlü pişirip sıcak veya soğuk servis edin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" style="padding: 40px;">
+                    <div class="card tarif-card" id="kiymali-omlet" style="height: 600px;">
+                        <div class="card-body">
+                            <h2>Kıymalı Omlet</h2>
+                            <p>Protein dolu, doyurucu ve lezzetli bir kahvaltılık: Kıymalı omlet.</p>
+                            <h5>Malzemeler</h5>
+                            <ul>
+                                <li>2 adet yumurta</li>
+                                <li>100 g kıyma</li>
+                                <li>1 yemek kaşığı sıvı yağ</li>
+                                <li>1 yemek kaşığı doğranmış soğan</li>
+                                <li>Tuz, karabiber, pul biber</li>
+                                <li>İsteğe göre maydanoz</li>
+                            </ul>
+                            <div class="hazırlık">
+                                <h5>Hazırlanışı</h5>
+                                <p>Önce tavada yağı kızdırıp soğan ve kıymayı kavurun. Baharatları ekleyin. Ayrı kapta çırptığınız yumurtayı kıymanın üzerine dökün. Kısık ateşte pişirin. İsteğe göre üstüne maydanoz serpip servis edin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
